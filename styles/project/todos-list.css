@@ -14,9 +14,6 @@
         border-bottom: 1px solid #e6e6e6;
     }
 
-
-
-
     .todos-item:first-child{
         border-top: 1px solid #e6e6e6;
     }
@@ -27,7 +24,7 @@
             float: left;
             position: relative;
         }
-        .todo-item_ready-mark{
+        .todo-item.__ready-mark{
             background: #ffffff;
             border: 1px solid #d6d6d6;
             position: absolute;
@@ -39,7 +36,7 @@
             cursor: pointer;
         }
 
-        .todo-item_ready-mark:checked{
+        .todo-item.__ready-mark:checked{
             border: 1px solid #65c5b3;
             position: absolute;
             background: url('../../img/icons/completed.png') no-repeat;
@@ -47,7 +44,7 @@
             background-position: center;
         }
 
-        .todo-item_text{
+        .todo-item.__text{
             cursor: pointer;
             overflow: hidden;
             border: 0;
@@ -65,7 +62,7 @@
 
         }
 
-        .todo-item_remove{
+        .todo-item.__remove{
             cursor: pointer;
             position: absolute;
             width: 41px;
@@ -79,13 +76,13 @@
     background-color: #fafafa;
 }
 
- .todos-item:hover .todo-item_remove{
+ .todos-item:hover .todo-item.__remove{
      background: url('../../img/icons/close.png') no-repeat;
      background-size: 18px 18px ;
      background-position: center;
 }
 
- .todo-item_ready-mark:checked .todo-item_text{
+ .todo-item.__ready-mark:checked .todo-item.__text{
      text-decoration: line-through;
  }
 

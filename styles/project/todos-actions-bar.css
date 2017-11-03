@@ -1,7 +1,7 @@
 .todos-actions-bar{
 
 }
-    .todo-actions-bar_counter{
+    .todo-actions-bar.__counter{
         margin: 16px 116px 0 12px;
         float: left;
         display: block;
