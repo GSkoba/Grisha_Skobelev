@@ -1,75 +1,80 @@
 <!DOCTYPE html>
 <html>
 <head>
+    <link rel="stylesheet" href="./styles/default.css" />
     <meta charset="utf-8">
-    <title>Todos</title>
+    <title>todos</title>
 </head>
 <body>
-<div  class="todo-header">
-    <h1 class="todos-title">Todos</h1>
-</div>
-<div class="todos-main">
-    <div class="todos-add">
-        <button class="todo-add_select-all" aria-label="Mark all as done">
-        </button>
-        <input class="todo-add_input" placeholder="Add" aria-label="Field add todo" />
+<div class="todos-main-wrapper">
+    <div  class="todo-header">
+        <h1 class="todos-title">todos</h1>
     </div>
-    <div class="todos-list">
-        <div class="todo-item">
-            <input type="checkbox"
-                   class="todo-item_ready-mark" aria-label="All not done"/>
-            <textarea class="todo-item_text">
-                HMTL
-            </textarea>
-            <button class="todo-item_remove" aria-label="Delete todo item"></button>
-        </div>
-        <div class="todo-item">
-            <input type="checkbox"
-                   class="todo-item_ready-mark" aria-label="All not done"/>
-            <textarea class="todo-item_text">
-                Java
-            </textarea>
-            <button class="todo-item_remove" aria-label="Delete todo item">
+    <div class="todos-container">
+        <div class="todos-add">
+            <button class="todos-add_select-all" aria-label="Mark all as done">
+                <div class="todos-add_select-all_icon"></div>
             </button>
+            <div class="todos-add_new-item-w">
+                <input class="todos-add_new-item" placeholder="What needs to be done?" aria-label="Field add todo" />
+            </div>
         </div>
-        <div class="todo-item">
-            <input type="checkbox"
-                   class="todo-item_ready-mark" aria-label="All not done"/>
-            <textarea class="todo-item_text">
-                JS
-            </textarea>
-            <button class="todo-item_remove" aria-label="Delete todo item"></button>
-        </div>
-        <div class="todo-item">
-            <input type="checkbox"
-                   class="todo-item_ready-mark" aria-label="All not done"/>
-            <textarea class="todo-item_text">
-                CSS
-            </textarea>
-            <button class="todo-item_remove" aria-label="Delete todo item"></button>
-        </div>
-    </div>
-    <div class="todos-actions-bar">
-        <div class="todo-actions-bar_counter-undone" aria-label="Count of not done todo">
-            4 item left
-        </div>
-        <div class="todo-filters" >
-            <button class="todo-filter __all"
-                    aria-label="Filter: show all">
-                All
-            </button>
-            <button class="todo-filter __active"
-                    aria-label="Filter: show active">
-                Aсtive
-            </button>
-            <button class="todos-filter __completed"
-                    aria-label="Filter: show completed">
-                Completed
-            </button>
-            <button class="todos-filter __clear-completed"
-                    aria-lable="Delete completed">
-                Delete completed
-            </button>
+        <div class="todos-list">
+            <div class="todos-item">
+                <div class="todo-item_ready-mark-conteiner">
+                    <input type="checkbox"
+                           class="todo-item __ready-mark" aria-label="All not done">
+                </div>
+                <textarea class="todo-item __text" readonly>HMTL</textarea>
+                <button class="todo-item __remove" aria-label="Delete todo item"></button>
+            </div>
+            <div class="todos-item">
+                <div class="todo-item_ready-mark-conteiner">
+                    <input type="checkbox"
+                           class="todo-item __ready-mark" aria-label="All not done"/>
+                </div>
+                <textarea class="todo-item __text" readonly>Java</textarea>
+                <button class="todo-item __remove" aria-label="Delete todo item"></button>
+            </div>
+            <div class="todos-item">
+                <div class="todo-item_ready-mark-conteiner">
+                    <input type="checkbox"
+                           class="todo-item __ready-mark" aria-label="All not done"/>
+                </div>
+                <textarea class="todo-item __text" readonly>JS</textarea>
+                <button class="todo-item __remove" aria-label="Delete todo item"></button>
+            </div>
+            <div class="todos-item">
+                <div class="todo-item_ready-mark-conteiner">
+                    <input type="checkbox"
+                           class="todo-item __ready-mark" aria-label="All not done"/>
+                </div>
+                <textarea class="todo-item __text" readonly>CSS</textarea>
+                <button class="todo-item __remove" aria-label="Delete todo item"></button>
+            </div>
+            <div class="todos-actions-bar">
+                <div class="todo-actions-bar __counter" aria-label="Count of not done todo">
+                    4 item left
+                </div>
+                <div class="todo-filters">
+                    <button class="todo-filter __all"
+                            aria-label="Filter: show all">
+                        All
+                    </button>
+                    <button class="todo-filter __active"
+                            aria-label="Filter: show active">
+                        Aсtive
+                    </button>
+                    <button class="todos-filter __complited"
+                            aria-label="Filter: show completed">
+                        Completed
+                    </button>
+                    <button class="todos-filter __clear-completed"
+                            aria-label="Delete completed">
+                        Delete completed
+                    </button>
+                </div>
+            </div>
         </div>
     </div>
 </div>
