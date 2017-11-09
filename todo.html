@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <link rel="stylesheet" href="./styles/default.css" />
     <meta charset="utf-8">
     <title>todos</title>
 </head>
@@ -21,43 +20,32 @@
         </div>
         <div class="todos-list">
             <div class="todos-item">
-                <div class="todo-item_ready-mark-conteiner">
-                    <input type="checkbox"
-                           class="todo-item __ready-mark" aria-label="All not done">
-                </div>
-                <textarea class="todo-item __text" readonly>HMTL</textarea>
-                <button class="todo-item __remove" aria-label="Delete todo item"></button>
+                <input type="checkbox" class="todo-item_ready-mark" aria-label="All not done">
+                <textarea class="todo-item_text" readonly>HMTL</textarea>
+                <button class="todo-item_remove" aria-label="Delete todo item"></button>
             </div>
             <div class="todos-item">
-                <div class="todo-item_ready-mark-conteiner">
-                    <input type="checkbox"
-                           class="todo-item __ready-mark" aria-label="All not done"/>
-                </div>
-                <textarea class="todo-item __text" readonly>Java</textarea>
-                <button class="todo-item __remove" aria-label="Delete todo item"></button>
+                <input type="checkbox" class="todo-item_ready-mark" aria-label="All not done"/>
+                <textarea class="todo-item_text" readonly>Java</textarea>
+                <button class="todo-item_remove" aria-label="Delete todo item"></button>
             </div>
             <div class="todos-item">
-                <div class="todo-item_ready-mark-conteiner">
-                    <input type="checkbox"
-                           class="todo-item __ready-mark" aria-label="All not done"/>
-                </div>
-                <textarea class="todo-item __text" readonly>JS</textarea>
-                <button class="todo-item __remove" aria-label="Delete todo item"></button>
+                <input type="checkbox" class="todo-item_ready-mark" aria-label="All not done"/>
+                <textarea class="todo-item_text" readonly>JS</textarea>
+                <button class="todo-item_remove" aria-label="Delete todo item"></button>
             </div>
-            <div class="todos-item">
-                <div class="todo-item_ready-mark-conteiner">
-                    <input type="checkbox"
-                           class="todo-item __ready-mark" aria-label="All not done"/>
-                </div>
-                <textarea class="todo-item __text" readonly>CSS</textarea>
-                <button class="todo-item __remove" aria-label="Delete todo item"></button>
+            <div class="todos-item __ready">
+                <input type="checkbox" class="todo-item_ready-mark" aria-label="All not done"/>
+                <textarea class="todo-item_text" readonly>CSS</textarea>
+                <button class="todo-item_remove" aria-label="Delete todo item"></button>
             </div>
+        </div>
             <div class="todos-actions-bar">
-                <div class="todo-actions-bar __counter" aria-label="Count of not done todo">
+                <div class="todo-actions-bar_counter" aria-label="Count of not done todo">
                     4 item left
                 </div>
                 <div class="todo-filters">
-                    <button class="todo-filter __all"
+                    <button class="todo-filter"
                             aria-label="Filter: show all">
                         All
                     </button>
@@ -69,13 +57,12 @@
                             aria-label="Filter: show completed">
                         Completed
                     </button>
-                    <button class="todos-filter __clear-completed"
-                            aria-label="Delete completed">
-                        Delete completed
-                    </button>
                 </div>
+                <button class="todo-actions-bar_clear-completed"
+                        aria-label="Delete completed">
+                    Delete completed
+                </button>
             </div>
-        </div>
     </div>
 </div>
 </body>
