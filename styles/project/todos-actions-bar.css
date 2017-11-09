@@ -1,22 +1,21 @@
 .todos-actions-bar{
-
+    overflow: hidden;
+    width: 100%;
 }
-    .todo-actions-bar.__counter{
-        margin: 16px 116px 0 12px;
+
+    .todo-actions-bar_counter{
+        margin: 15px 8px 15px 8px;
         float: left;
-        display: block;
         color: #888888;
     }
 
     .todo-filters{
-        margin-left: auto;
-        width: 448px;
-        height: 40px;
-        border: none;
+        float: left;
+        margin: 0px 59px 9px 116px;
         color: #888888;
     }
 
-        .todo-filter.__all{
+        .todo-filter{
             position: relative;
             margin: 11px 12px 0 0;
             background: none;
@@ -26,7 +25,6 @@
             -webkit-animation: none;
             -webkit-appearance: none;
         }
-
 
         .todo-filter.__active{
             position: relative;
@@ -41,7 +39,7 @@
 
         .todos-filter.__complited{
             position: relative;
-            margin: 11px 46px 0 0;
+            margin: 11px 0px 0 0;
             background: none;
             border-radius: 15%;
             cursor: pointer;
@@ -49,14 +47,17 @@
             -webkit-animation: none;
             -webkit-appearance: none;
         }
-
-        .todos-filter.__clear-completed{
-            position: relative;
-            margin: 11px 11px 0 0;
-            background: none;
-            border-radius: 15%;
-            cursor: pointer;
-            border: none;
-            -webkit-animation: none;
-            -webkit-appearance: none;
-        }
+    .todo-actions-bar_clear-completed{
+        float: left;
+        position: absolute;
+        width: 109px;
+        height: 22.8px;
+        padding: 0px;
+        margin: 11px 11px 0 0;
+        background: none;
+        border-radius: 15%;
+        cursor: pointer;
+        border: none;
+        -webkit-animation: none;
+        -webkit-appearance: none;
+    }

@@ -1,12 +1,4 @@
-.todos-list{
 
-}
-
-    .todos-list:after{
-        content: '';
-        display: block;
-        clear: both;
-    }
 
     .todos-item{
 
@@ -17,14 +9,14 @@
     .todos-item:first-child{
         border-top: 1px solid #e6e6e6;
     }
-        .todo-item_ready-mark-conteiner{
+        .todo-item_ready{
             width: 64px;
             height: 64px;
             background: none;
             float: left;
             position: relative;
         }
-        .todo-item.__ready-mark{
+        .todo-item_ready-mark{
             background: #ffffff;
             border: 1px solid #d6d6d6;
             position: absolute;
@@ -36,7 +28,7 @@
             cursor: pointer;
         }
 
-        .todo-item.__ready-mark:checked{
+        .todo-item_ready-mark:checked{
             border: 1px solid #65c5b3;
             position: absolute;
             background: url('../../img/icons/completed.png') no-repeat;
@@ -44,7 +36,7 @@
             background-position: center;
         }
 
-        .todo-item.__text{
+        .todo-item_text{
             cursor: pointer;
             overflow: hidden;
             border: 0;
@@ -59,10 +51,11 @@
             padding-right: 20px;
             padding-top: 20px;
             resize: none;
+            margin-left: 62px;
 
         }
 
-        .todo-item.__remove{
+        .todo-item_remove{
             cursor: pointer;
             position: absolute;
             width: 41px;
@@ -76,13 +69,13 @@
     background-color: #fafafa;
 }
 
- .todos-item:hover .todo-item.__remove{
+ .todos-item:hover .todo-item_remove{
      background: url('../../img/icons/close.png') no-repeat;
      background-size: 18px 18px ;
      background-position: center;
 }
 
- .todo-item.__ready-mark:checked .todo-item.__text{
+ .todo-item_ready-mark:checked .todo-item_text{
      text-decoration: line-through;
  }
 
