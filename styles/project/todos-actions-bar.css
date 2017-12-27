@@ -1,63 +1,77 @@
-.todos-actions-bar{
-    overflow: hidden;
-    width: 100%;
+.todos-actions-bar {
+    padding: 4px 12px;
+    text-align: center;
 }
 
-    .todo-actions-bar_counter{
-        margin: 15px 8px 15px 8px;
-        float: left;
-        color: #888888;
-    }
+.todos-actions-bar:before,
+.todos-actions-bar:after {
+    content: '';
+    display: table;
+}
 
-    .todo-filters{
-        float: left;
-        margin: 0px 59px 9px 116px;
-        color: #888888;
-    }
+.todos-actions-bar:after {
+    clear: both;
+}
 
-        .todo-filter{
-            position: relative;
-            margin: 11px 12px 0 0;
-            background: none;
-            border-radius: 15%;
-            cursor: pointer;
-            border: none;
-            -webkit-animation: none;
-            -webkit-appearance: none;
-        }
+.todo-actions-bar_counter {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 200;
+    padding: 2px 0;
+    float: left;
+    margin: 8px 16px 8px 0;
+}
 
-        .todo-filter.__active{
-            position: relative;
-            margin: 11px 12px 0 0;
-            background: none;
-            border-radius: 15%;
-            cursor: pointer;
-            border: none;
-            -webkit-animation: none;
-            -webkit-appearance: none;
-        }
+.filter {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    background: none;
+    outline: none;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 200;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
 
-        .todos-filter.__complited{
-            position: relative;
-            margin: 11px 0px 0 0;
-            background: none;
-            border-radius: 15%;
-            cursor: pointer;
-            border: none;
-            -webkit-animation: none;
-            -webkit-appearance: none;
-        }
-    .todo-actions-bar_clear-completed{
-        float: left;
-        position: absolute;
-        width: 109px;
-        height: 22.8px;
-        padding: 0px;
-        margin: 11px 11px 0 0;
-        background: none;
-        border-radius: 15%;
-        cursor: pointer;
-        border: none;
-        -webkit-animation: none;
-        -webkit-appearance: none;
-    }
+.filter.__active {
+    border: 1px solid #ebdfdf;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.todo-filters {
+    white-space: nowrap;
+    display: inline-block;
+    margin: 8px 0;
+}
+
+.todo-filters .filter {
+    margin: 0 4px;
+}
+
+.todo-filters .filter:first-child {
+    margin-left: 0;
+}
+
+.todo-filters .filter:last-child {
+    margin-right: 0;
+}
+
+.todo-actions-bar_clear-completed {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 200;
+    margin: 8px 0 8px 16px;
+    padding: 2px 0;
+    border: none;
+    background: 0;
+    outline: none;
+    float: right;
+    cursor: pointer;
+}
