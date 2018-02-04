@@ -1,0 +1,77 @@
+.todos-actions-bar {
+    padding: 4px 12px;
+    text-align: center;
+}
+
+.todos-actions-bar:before,
+.todos-actions-bar:after {
+    content: '';
+    display: table;
+}
+
+.todos-actions-bar:after {
+    clear: both;
+}
+
+.todo-actions-bar_counter {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 200;
+    padding: 2px 0;
+    float: left;
+    margin: 8px 16px 8px 0;
+}
+
+.filter {
+    font-family: "Helvetica Neue", Arial, sans-serif;
+    font-size: 14px;
+    line-height: 18px;
+    background: none;
+    outline: none;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-weight: 200;
+    border: 0;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.filter.__active {
+    border: 1px solid #ebdfdf;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    padding-left: 7px;
+    padding-right: 7px;
+}
+
+.todo-filters {
+    white-space: nowrap;
+    display: inline-block;
+    margin: 8px 0;
+}
+
+.todo-filters .filter {
+    margin: 0 4px;
+}
+
+.todo-filters .filter:first-child {
+    margin-left: 0;
+}
+
+.todo-filters .filter:last-child {
+    margin-right: 0;
+}
+
+.todo-actions-bar_clear-completed {
+    font-size: 14px;
+    line-height: 18px;
+    font-weight: 200;
+    margin: 8px 0 8px 16px;
+    padding: 2px 0;
+    border: none;
+    background: 0;
+    outline: none;
+    float: right;
+    cursor: pointer;
+}
